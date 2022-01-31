@@ -1,7 +1,8 @@
+import CustomButton from '@core/CustomButton'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '@styles/home.module.scss'
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
+            <CustomButton type="primary">Documentation</CustomButton>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
